@@ -3,7 +3,7 @@ async def update_slide(presentationId: str, updates_content):
     data = {"presentationId": presentationId, "updates": updates_content}
 
     # URL of your Google Apps Script web app
-    script_url = "https://script.google.com/macros/s/AKfycbxwm_c8N-wYzkh8X3W_qofD9vpJgZ-nPUWcmjWRpVY5XoNFGMQgsCkvOVGc7TtUPbjM/exec"
+    script_url = f"https://script.google.com/macros/s/{YOUR_GOOGLE_APP_SCRIPT_DEPLOYMENT_ID}/exec"
     timeout = httpx.Timeout(10.0, read=180.0)
     # Send a POST request to Google Apps Script
     async with httpx.AsyncClient(timeout=timeout, follow_redirects=True) as client:
