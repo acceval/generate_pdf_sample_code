@@ -10,5 +10,5 @@
 
 ### Google Apps Script
 
-1.	Insert the Google Apps Script into your [Google Apps](https://script.google.com/home) environment and deploy it.
+1.	Insert the google_app_script.js into your [Google Apps](https://script.google.com/home) environment and deploy it.
 2.	Once deployed, Google will provide you with an API endpoint. Use this endpoint to upload your content to your slides. The script includes functionality to generate a PDF, so this API will return a link to download the PDF.
